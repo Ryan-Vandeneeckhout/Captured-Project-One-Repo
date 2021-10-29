@@ -1,0 +1,10 @@
+$color-primary: rgb(76, 238, 167);
+$color-secondary: #fdfa69;
+$color-black: #2c2c2c;
+$color-white: #fafafa;
+$color-ice: #effdf3;
+
+@mixin MaxSize100 {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,97 @@
+.upperWebsite {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  margin-top: 1%;
+  width: 50%;
+  margin-right: 5%;
+}
+#headNav ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
+  padding: 0 0;
+}
+#headNav li a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: black 1px 1px;
+  font-style: italic;
+  font-size: 26px;
+  transition: all 0.15s ease-in-out;
+}
+#headNav li a:hover {
+  color: gray;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  right: 0;
+  width: 20vw;
+  top: 2vh;
+}
+
+.dropdown ul li {
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 900px) {
+  #headNav .main-menu {
+    display: none;
+  }
+
+  #headNav {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    width: moz-fit-content;
+    height: 100%;
+    position: relative;
+    padding-top: 0;
+  }
+  #headNav a {
+    font-size: $font-medium3;
+    font-family: $font-Heading-type;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    margin-right: 5%;
+  }
+
+  .dropdown {
+    display: inline-block;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  .dropdown ul {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #headNav ul {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #headNav:hover .dropdown-content {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}

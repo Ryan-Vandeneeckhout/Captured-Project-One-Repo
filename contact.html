@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Captured Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header>
+        <div class = "contactBackground">
+        <!--Start of Top of Site Section-->
+            <div class="upperWebsite">          
+                <nav id="headNav">
+                    <!--Start of Site Nav Section-->
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <span><button class = "darkModeOncontact" id = "darkModeOncontact" onclick="reMoveGallery();"></button></span>
+                    <div class="dropdown">
+                        <a>MENU</a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--End of Site Nav Section-->
+                <span><button class = "darkModeOn" id = "darkModeOn" onclick="caputuredHome();"></button></span>
+            </div>
+            <!--Site Home Title--><div class = "webpageHeadingContainer1"><h2>Get in Touch</h2></div>
+        </div>
+    </header>
+    <main>
+        <div class = "main-contact-content">
+            <div class = "contact-Form-Content">
+                <form id = "contactForm">
+                    <div class = "topform">
+                        <div class = "formname">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="">
+                        </div>
+                        <div class = "formemail">
+                            <label for="email">Email address</label>
+                            <input type="text" id="email" name="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class = "formcomment">
+                        <label for="comment"></label>
+                        <textarea id="comment" name="subject" placeholder="comment" style="height:200px"></textarea>
+                    </div>
+                    <div class = "postcomment">
+                        <input type="submit" id = "submit" value="Post Comment">
+                    </div>   
+                </form>
+            </div>
+            <div class = "wrapper-Aside-Contact">
+                <aside id = "Aside-contact">
+                    <div class = "contact-Aside-Content">
+                        <div class = "icon-Lists">
+                            <i class="fa fa-facebook" style="font-size:36px"></i>
+                            <i class="fa fa-instagram" style="font-size:36px"></i>
+                            <i class="fa fa-twitter" style="font-size:36px"></i>
+                            <i class="fa fa-reddit" style="font-size:36px"></i>
+                        </div>
+                        <h4>INFO@EMAIL.COM</h4>
+                        <div class = "-contact-Address">
+                            <address>123-456-7890 <br>
+                            123 Queen Street West, Unit 10 <br>
+                            Toronto, Ontario<br>
+                           M5V2D5</address>
+                        </div>
+                    </div>
+                </aside>
+            </div>    
+        </div>
+    </main>
+    
+    <footer>
+        <div class = "credits">
+            <p class = "creditsp">Copyright &copy; Juno College of Technology</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="appScript.js"></script>
+</body>
+</html>

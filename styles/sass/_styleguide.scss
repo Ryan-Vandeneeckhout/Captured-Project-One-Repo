@@ -1,0 +1,144 @@
+@import "variables";
+
+/*Style Guide Content Measurements Begin */
+
+$font-large: 138px;
+$font-medium: 80px;
+$font-medium2: 42px;
+$font-medium3: 32px;
+$font-small: 20px;
+$font-form: 26px;
+
+$font-Heading-type: Playfair Display;
+$font-Body-type: Roboto;
+
+@mixin TextTransform {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  color: black;
+  background-color: lighten($color-primary, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+h1 {
+  font-family: $font-Heading-type, Arial, Helvetica, sans-serif;
+  font-size: $font-large;
+  @include TextTransform();
+  z-index: 999;
+}
+
+h2 {
+  font-family: $font-Heading-type, Arial, Helvetica, sans-serif;
+  font-size: $font-medium;
+  line-height: 92px;
+  @include TextTransform();
+  z-index: 900;
+}
+
+h3 {
+  font-family: $font-Heading-type, Arial, Helvetica, sans-serif;
+  font-size: $font-medium2;
+  letter-spacing: 1px;
+  @include TextTransform();
+}
+
+h4 {
+  font-family: $font-Heading-type, Arial, Helvetica, sans-serif;
+  font-size: $font-medium3;
+  @include TextTransform();
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: $font-Body-type, Arial, Helvetica, sans-serif;
+  font-size: $font-small;
+  line-height: 32px;
+}
+
+h4:hover,
+h3:hover {
+  color: whitesmoke;
+}
+
+button {
+  font-family: $font-Heading-type, Arial, Helvetica, sans-serif;
+  font-size: $font-small;
+  background-color: $color-primary;
+  letter-spacing: 1px;
+  line-height: 29px;
+  cursor: pointer;
+  align-content: center;
+  border: none;
+  @include TextTransform();
+}
+
+button:hover {
+  background-color: gold;
+  transform: scale(1.15);
+  border: solid black 5px;
+  transition: all 0.3s ease;
+  height: 65px;
+}
+.findOutMoreButton {
+  width: 250px;
+  height: 60px;
+  margin-top: 2%;
+}
+
+.readMoreButton {
+  width: 200px;
+  height: 60px;
+  margin-top: 2%;
+}
+a {
+  font-family: $font-Heading-type;
+  font-size: $font-small;
+  text-decoration: none;
+  color: $color-black;
+}
+.credits {
+  background-color: rgb(54, 54, 54);
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 50px;
+  margin-top: 5%;
+  display: flex;
+}
+.creditsp {
+  color: white;
+  margin: 0;
+}
+.webpageHeadingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 52vh;
+}
+.webpageHeadingContainer1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/*Style Guide Content Measurements End */
