@@ -1,46 +1,22 @@
+const darkModeOnBttn = document.querySelector(".darkModeOn");
+let htmlElement = document.documentElement;
+
+darkModeOnBttn.addEventListener("click", function () {
+    if (darkmodetheme === 0) {
+        darkModeOnBttn.classList.toggle("open");
+        htmlElement.setAttribute("data-theme", "dark");
+        darkmodetheme--;
+    }
+    else {
+        htmlElement.setAttribute("data-theme", "light");
+        darkmodetheme++;
+    }
+   
+ 
+});
 
 // Global Variable List Start// 
 let darkmodetheme = 0;
-let bluemodetheme = 0; 
-let caputuredHomePage = 0;
-let caputuredContactPage = 0;
-let caputuredBlogPage = 0;
-let caputuredContent = 0;
-let caputuredAboutPage = 0;
-
-const CameraImg = document.querySelector(".galleryImage");
-const imgs = document.querySelectorAll(".galleryCaputuredImages");
-
-
-
-function pageCheckTheme() {
-
-    if (caputuredHomePage === 1) {
-        caputuredContactPage = 0;
-        caputuredBlogPage = 0;
-        reMoveGallery();
-    }
-    
-    if (caputuredContactPage === 1) {
-
-    }
-
-    if (caputuredBlogPage === 1) {
-        caputuredContactPage = 0;
-        caputuredHomePage = 0;
-        darkmodeBlog();
-    }
-
-}
-function caputuredHome() {
-    caputuredHomePage = 1;
-    pageCheckTheme(); 
-}
-
-function caputuredBlog() {
-    caputuredBlogPage = 1;
-    pageCheckTheme();
-}
 
 function darkmodeBlog() {
     if (darkmodetheme === 0) {

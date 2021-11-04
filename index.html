@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,27 +21,25 @@
                 <nav id="headNav">
                     <!--Start of Site Nav Section-->
                     <ul class="main-menu">
-                        <li id = "active"><a href="index.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         
                     </ul>  
-                    <!--Drop Down Menu Starts-->
                     <div class="dropdown">
                         <a>MENU</a>
                         <div class="dropdown-content">
                             <ul class="dropdown-content">
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="home.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
-                    <!--Drop Down Menu Ends-->
                 </nav>
-                <span><button class = "darkModeOn" id = "darkModeOn" onclick="caputuredHome();"></button></span><!--Darkmode/Theme Changer Button-->
+                <span><button class = "darkModeOn" id = "darkModeOn" name="theme"></button></span>
                 <!--End of Site Nav Section-->
             </div>
             <!--Site Home Title--><div class = "webpageHeadingContainer"><h1>Captured</h1></div>
@@ -120,22 +118,22 @@
         </section>
         <section class = "galleryCaputured" id = "galleryCaputured">
             <div class = "galleryCaputuredImages" id = "galleryCaputuredImages">
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-1.jpg" alt="Close up of Camera attached to Tripod">
                 </div>
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-2.jpg" alt="Camera lens down in leaves">
                 </div>
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-3.jpg" alt="Close up of Front View of Nixon Camera">
                 </div>  
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-1.jpg" alt="Close up of Camera attached to Tripod">
                 </div>
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-2.jpg" alt="Camera lens down in leaves">
                 </div>
-                <div class = "galleryImage" id = "galleryImage" onclick="reMoveGallery();">
+                <div class = "galleryImage" id = "galleryImage">
                     <img src="./assets/gallery-image-3.jpg" alt="Close up of Front View of Nixon Camera">
                 </div>  
             </div>

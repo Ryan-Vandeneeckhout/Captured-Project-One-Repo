@@ -273,11 +273,31 @@ html {
 
 /*Setup CSS - Normalize Ends*/
 /*Style Guide Content Measurements Begin */
+html {
+  --color-primary: #d8fbec;
+  --color-secondary: white;
+  --color-black: black;
+  --color-white: #fafafa;
+  --color-font: black;
+  --color-icons: rgb(76, 238, 167);
+  --color-h1: black;
+}
+
+html[data-theme=dark] {
+  --color-primary: #2c2c2c;
+  --color-secondary: rgb(90, 90, 90);
+  --color-black: black;
+  --color-white: #fafafa;
+  --color-font: white;
+  --color-icons: white;
+  --color-h1: black;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  color: black;
+  color: var(--color-font);
   background-color: #d8fbec;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,6 +319,7 @@ h1 {
   font-style: italic;
   text-transform: uppercase;
   z-index: 999;
+  color: var(--color-h1);
 }
 
 h2 {
@@ -333,11 +354,6 @@ p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 32px;
-}
-
-h4:hover,
-h3:hover {
-  color: whitesmoke;
 }
 
 button {
@@ -431,8 +447,7 @@ a {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  background-color: lightgrey;
 }
 
 .main {
@@ -685,6 +700,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: var(--color-primary);
 }
 
 .centeringWrapper {
@@ -722,7 +738,7 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #fafafa;
+  background-color: var(--color-secondary);
 }
 
 .wordContent,
@@ -793,12 +809,13 @@ header {
   width: 100%;
   height: 60%;
   padding-bottom: 5%;
+  background-color: var(--color-primary);
 }
 
 .CapturedContactResourcesContainer {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .CapturedContactResourcesContainer ul {
@@ -859,12 +876,13 @@ main {
       align-content: center;
   text-align: center;
   position: relative;
-  background-color: #4ceea7;
+  background-color: var(--color-icons);
 }
 .icons i {
   position: absolute;
   top: 15px;
   font-size: 36px;
+  color: var(--color-black);
 }
 
 .cameraToolsImage {
@@ -899,6 +917,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: var(--color-primary);
 }
 
 .monthlyProfileTextContainer {
@@ -927,7 +946,7 @@ main {
   width: 4740px;
   height: 80%;
   padding: 10% 0;
-  background-color: #fafafa;
+  background-color: var(--color-secondary);
   position: relative;
 }
 
@@ -937,6 +956,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: var(--color-secondary);
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: horizontal;
@@ -1027,11 +1047,31 @@ main {
 }
 
 /*Style Guide Content Measurements Begin */
+html {
+  --color-primary: #d8fbec;
+  --color-secondary: white;
+  --color-black: black;
+  --color-white: #fafafa;
+  --color-font: black;
+  --color-icons: rgb(76, 238, 167);
+  --color-h1: black;
+}
+
+html[data-theme=dark] {
+  --color-primary: #2c2c2c;
+  --color-secondary: rgb(90, 90, 90);
+  --color-black: black;
+  --color-white: #fafafa;
+  --color-font: white;
+  --color-icons: white;
+  --color-h1: black;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  color: black;
+  color: var(--color-font);
   background-color: #d8fbec;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1053,6 +1093,7 @@ h1 {
   font-style: italic;
   text-transform: uppercase;
   z-index: 999;
+  color: var(--color-h1);
 }
 
 h2 {
@@ -1087,11 +1128,6 @@ p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 32px;
-}
-
-h4:hover,
-h3:hover {
-  color: whitesmoke;
 }
 
 button {
@@ -1185,8 +1221,7 @@ a {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  background-color: lightgrey;
 }
 
 .main {
